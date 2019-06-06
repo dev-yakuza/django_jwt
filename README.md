@@ -105,10 +105,10 @@ django_jwtはジャンゴ(django)でJWT(Json Web Token)を使う方法につい�
 - [ジャンゴ(django)でJWTを使う方法](https://dev-yakuza.github.io/django/jwt/)
 
 ### 使い方
-下記のコマンドでdjango_exerciseレポジトリ(Repository)をコピー(Clone)します。
+下記のコマンドでdjango_jwtレポジトリ(Repository)をコピー(Clone)します。
 
 ```bash
-git clone https://github.com/dev-yakuza/django_exercise.git
+git clone https://github.com/dev-yakuza/django_jwt.git
 ```
 
 下記のコマンドでパイソン仮想環境を作ります。
@@ -129,14 +129,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-データベースを連動するため、`django_exercise/settings.py`を開いて下記の内容を自分のDBに合わせて修正します。
+データベースを連動するため、`django_jwt/settings.py`を開いて下記の内容を自分のDBに合わせて修正します。
 
 ```python
 ...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_exercise',  # DB name
+        'NAME': 'django_jwt',  # DB name
         'USER': 'root',  # DB account
         'PASSWORD': '',  # DB account's password
         'HOST': '127.0.0.1',  # DB address(IP)
@@ -200,10 +200,10 @@ django_jwt is the repository about how to use JWT(Json Web Token) authentication
 - [Use JWT in django](https://dev-yakuza.github.io/en/django/jwt/)
 
 ### How to use
-execute the command below to clone the django_exercise repository.
+execute the command below to clone the django_jwt repository.
 
 ```bash
-git clone https://github.com/dev-yakuza/django_exercise.git
+git clone https://github.com/dev-yakuza/django_jwt.git
 ```
 
 execute the command below to start python virtual environment.
@@ -224,14 +224,14 @@ execute the command below to install modules for the project.
 pip install -r requirements.txt
 ```
 
-you need to modify `django_exercise/settings.py` to connect your database like below.
+you need to modify `django_jwt/settings.py` to connect your database like below.
 
 ```python
 ...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_exercise',  # DB name
+        'NAME': 'django_jwt',  # DB name
         'USER': 'root',  # DB account
         'PASSWORD': '',  # DB account's password
         'HOST': '127.0.0.1',  # DB address(IP)
